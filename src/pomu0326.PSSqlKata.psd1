@@ -69,7 +69,7 @@
     # NestedModules = @()
 
     # このモジュールからエクスポートする関数です。最適なパフォーマンスを得るには、ワイルドカードを使用せず、エクスポートする関数がない場合は、エントリを削除しないで空の配列を使用してください。
-    FunctionsToExport = @('New-SqlKataQuery', 'ConvertFrom-SqlKataQuery')
+    FunctionsToExport = @('New-SqlKataQuery', 'ConvertTo-SqlText')
 
     # このモジュールからエクスポートするコマンドレットです。最適なパフォーマンスを得るには、ワイルドカードを使用せず、エクスポートするコマンドレットがない場合は、エントリを削除しないで空の配列を使用してください。
     CmdletsToExport = @()

@@ -58,7 +58,7 @@ Since the returned object is a native `SqlKata.Query` instance, SqlKata's query-
 
 ### Compile a query
 
-`ConvertFrom-SqlKataQuery` compiles a `SqlKata.Query` into a SQL string.
+`ConvertTo-SqlText` compiles a `SqlKata.Query` into a SQL string.
 
 ```powershell
 $query = New-SqlKataQuery
@@ -67,7 +67,7 @@ $query.From("users").
     Select("id", "name").
     Where("active", 1)
 
-$sql = $query | ConvertFrom-SqlKataQuery
+$sql = $query | ConvertTo-SqlText
 
 $sql
 ```
@@ -80,7 +80,7 @@ The query is compiled using `SqlKata.Compilers.PostgresCompiler`.
 
 Creates an empty `SqlKata.Query` instance.
 
-### `ConvertFrom-SqlKataQuery`
+### `ConvertTo-SqlText`
 
 Compiles a `SqlKata.Query` object into a SQL string.
 

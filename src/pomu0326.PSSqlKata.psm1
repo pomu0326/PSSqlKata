@@ -46,14 +46,14 @@ function New-SqlKataQuery
     }
 }
 
-function ConvertFrom-SqlKataQuery
+function ConvertTo-SqlText
 {
     <#
     .SYNOPSIS
         Compiles a SqlKata Query object into a raw SQL string.
 
     .DESCRIPTION
-        The ConvertFrom-SqlKataQuery cmdlet takes a SqlKata.Query object and uses the
+        The ConvertTo-SqlText cmdlet takes a SqlKata.Query object and uses the
         PostgresCompiler to generate a standard PostgreSQL/DuckDB compatible SQL string.
 
     .PARAMETER InputObject
@@ -69,7 +69,7 @@ function ConvertFrom-SqlKataQuery
     .EXAMPLE
         $Query = New-SqlKataQuery
         $Query.FromRaw("generate_series(1, 100) AS t(i)").Select("i")
-        $SqlText = $Query | ConvertFrom-SqlKataQuery -InputObject $Query
+        $SqlText = $Query | ConvertTo-SqlText
     #>
     [CmdletBinding()]
     [OutputType([string])]
@@ -89,4 +89,4 @@ function ConvertFrom-SqlKataQuery
 
 }
 
-Export-ModuleMember -Function @("New-SqlKataQuery", "ConvertFrom-SqlKataQuery")
+Export-ModuleMember -Function @("New-SqlKataQuery", "ConvertTo-SqlText")
