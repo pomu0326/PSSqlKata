@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- PowerShell 7 と Windows Powershell の両方で動かすためにnetstandard2.0を指定 -->
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <!-- C#コードはコンパイルしないため、空のダミーDLLを出力させないよう設定 -->
+    <CopyBuildOutputToPublishDirectory>false</CopyBuildOutputToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SqlKata" Version="2.4.0" />
+  </ItemGroup>
+</Project>
