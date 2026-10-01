@@ -21,7 +21,7 @@
     GUID = '254b6019-66dd-4ccd-a26d-3d56263a88ab'
 
     # このモジュールの作成者
-    Author = 'pomu0326@gmail.com'
+    Author = 'pomu0326'
 
     # Company or vendor of this module
     # CompanyName = ''
@@ -30,7 +30,7 @@
     Copyright = '(c) 2026 pomu0326. All rights reserved.'
 
     # このモジュールの機能の説明
-    # Description = ''
+    Description = 'A simple PowerShell wrapper for SqlKata.'
 
     # このモジュールに必要な Windows PowerShell エンジンの最小バージョン
     PowerShellVersion = '5.1'
@@ -95,13 +95,13 @@
         PSData = @{
 
             # このモジュールに適用されているタグ。オンライン ギャラリーでモジュールを検出する際に役立ちます。
-            # Tags = @()
+            Tags = @('PowerShell', 'SqlKata', 'SQL', 'QueryBuilder')
 
             # このモジュールのライセンスの URL。
-            # LicenseUri = ''
+            LicenseUri = 'https://github.com/pomu0326/PSSqlKata/blob/main/LICENSE'
 
             # このプロジェクトのメイン Web サイトの URL。
-            # ProjectUri = ''
+            ProjectUri = 'https://github.com/pomu0326/PSSqlKata'
 
             # このモジュールを表すアイコンの URL。
             # IconUri = ''
